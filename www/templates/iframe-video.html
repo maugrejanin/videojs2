@@ -57,6 +57,9 @@
                     console.log("Tô no canvas!");
                     canvas.handleResize();
                 }
+                else {
+                    console.log("Nada de canvas!");
+                }
             });
         });
         var videoElement = document.getElementById("videojs-panorama-player");
@@ -82,6 +85,9 @@
                     if (canvas)  {
                         console.log("Tô no canvas!");
                         canvas.handleMobileOrientation(event.data.events);
+                    }
+                    else {
+                        console.log("Nada de canvas!");
                     }
                 }
             }
