@@ -1,0 +1,43 @@
+/* validation elements - Begin */
+
+md-input-container .md-errors-spacer {
+    min-height: 0!important;
+}
+
+.input-error-container{
+	display: none;
+}
+
+.md-input-invalid .input-error-container{
+	display: block;
+}
+
+.md-input-invalid{
+	margin-bottom: 0px;
+}
+
+.input-error-container{
+	height: 50px;
+	line-height: 20px;
+	font-size: 15px;
+	color: #dd2c00;
+}
+
+/* validation elements - End */
+
+/* Image elements - Begin */
+
+.image-container img{
+	width: 100%;
+}
+
+#photo_container_action{
+	position: relative;
+	left: 75%;
+	top: 66%;
+	height: 170px;
+	float: left;
+	margin-top: -190px!important;
+}
+
+/* Image elements - End */

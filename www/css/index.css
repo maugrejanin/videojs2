@@ -1,0 +1,178 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    /*background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );*/
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FFFFFF),
+        color-stop(0.51, #FFFFFF)
+    );
+    background-attachment:fixed;
+    font-family:'Roboto', 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:1.0rem;
+    letter-spacing: 0.012rem;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+.text-ellipsis {
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+}
+
+.loading-container{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        z-index: 100;
+        margin-top: 56px;
+    }
+
+.list-container{
+    height: 80%;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+.page {
+    bottom:0; 
+    padding-top:0px;
+    position:absolute; 
+    top:0;  
+    width:100%; 
+    height:100%;
+}
+
+.message-style > md-list-item .md-button {
+    line-height: 20px!important;
+}
+
+/* Início - cards */
+
+.like-icon.liked{
+	color: red!important;
+}
+
+.voted{
+	font-size: 30px;
+	margin: -6px 0px 0 -5px;
+}
+
+.novoted{
+	color: black!important;
+}
+
+.vote-up{
+	color: green;
+}
+
+.vote-down{
+	color: darkred;
+}
+.justified-with-padding {
+    text-align: justify;
+    padding: 15px;
+    padding-top: 25px;
+}
+.empty-area {
+    height: 80px;
+    width: auto;
+}
+/* Fim - cards */
+
+
+/* Início - buttons */
+
+.fixed-add-button{
+	position: fixed!important;
+	top: 100%;
+	left: 100%;
+	margin-top: -76px!important;
+	margin-left: -76px!important;
+}
+
+/* Fim - buttons */
+
+/* Início - form */
+
+input, label, textarea, md-select-value span{
+	font-size: 18px!important;
+}
+
+/* Fim - form */
+
+/* Início - Links sem formatação de link */
+.links-without-decoration{
+        outline: none;
+        text-decoration: none
+    }
+/* Fim - Links sem formatação de link */
+
+.LineBtn{
+    width: 85%
+}

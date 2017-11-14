@@ -1,0 +1,40 @@
+@keyframes rotateFall {
+    0%      { transform: rotateZ(0deg); }
+    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { transform: rotateZ(17deg); }
+    60%     { transform: rotateZ(16deg); }
+    100%    { transform: translateY(100%) rotateZ(17deg); }
+}
+
+@keyframes slideInRight {
+    from    { opacity: 0.0; transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+@keyframes slideOutRight {
+    to      { opacity: 0.0; transform: translateX(100%); }
+}
+
+@keyframes slideInUp {
+    from    { opacity: 0.0; transform:translateY(100%); }
+    to      { transform: translateY(0); }
+}
+@keyframes slideOutBottom {
+    to      { opacity: 0.0; transform: translateY(100%); }
+}
+@keyframes fadeIn {
+    from    { opacity: 0.7; }
+}
+@keyframes fadeOut {
+    to    { opacity: 0.7; }
+}
+@keyframes scaleUp {
+    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+.ng-enter       { z-index: 8888; }
+.ng-leave       { z-index: 9999; }
+
+.home.ng-enter         { /*animation: fadeIn .2s both ease-in;*/ }
+.home.ng-leave         { transform-origin: 0% 0%; animation: fadeOut .2s both ease-in; }
+.child.ng-enter      { animation:slideInRight .2s both ease-in; }
+.child.ng-leave      { transform-origin: 50% 50%; animation: slideOutRight .2s both ease-in; }

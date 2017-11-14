@@ -1,0 +1,11 @@
+.star-icon{
+	font-size: 30px;
+}
+
+.star-button{
+	margin: 0!important;
+}
+
+.stared{
+    color: #ffcd00;
+}
