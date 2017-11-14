@@ -2,6 +2,7 @@ var panorama = player.panorama({
             PanoramaThumbnail: true, //enable panorama thumbnail
             KeyboardControl: true,
             clickToToggle: true,
+            autoMobileOrientation: true,
             Notice: {
                 Enable: true,
                 Message: (isMobile())? "please drag and drop the video" : "please use your mouse drag and drop the video"
