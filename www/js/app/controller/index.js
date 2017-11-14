@@ -41,9 +41,10 @@ index.controller('indexCtrl', function($scope, $http, $window, $location, $rootS
     }; 
 
     if ($location.path() == '/index') {
+        console.log("ai foi index!");
     	init(window, window.videojs);	
     } else {
-		console.log("ai foi");
+		console.log("ai nao foi index!");
         var player = document.getElementById("player");
         var playerWidth = player.width;
         var playerHeight = player.height;
